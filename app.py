@@ -4,6 +4,8 @@ import cv2
 import numpy as np
 from keras.models import load_model
 
+os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
+
 # Load the saved model
 # loaded_model = load_model('defect_detection_model.h5')
 loaded_model = load_model('trained_mobilenetv2_model.keras')
