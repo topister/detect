@@ -8,7 +8,7 @@ os.environ['PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION'] = 'python'
 
 # Load the saved model
 # loaded_model = load_model('defect_detection_model.h5')
-loaded_model = load_model('trained_mobilenetv2_model.keras')
+loaded_model = load_model('trained_mobilenetv2_model.keras', compile=False)
 
 
 # Define the path to the uploaded images folder
